@@ -16,7 +16,7 @@
 
 ### 2. [리액트 개발 환경](chap02)
 
-### 3.리액트의 테스트 - Jest
+### 3.[리액트의 테스트 - Jest](chap03)
 
 ### 4. 리액트 테스트 - react-testing-library
 
