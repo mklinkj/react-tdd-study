@@ -18,7 +18,7 @@
 
 ### 3.[리액트의 테스트 - Jest](chap03)
 
-### 4. 리액트 테스트 - react-testing-library
+### 4. [리액트 테스트 - react-testing-library](chap04)
 
 ### 5. 나의 첫 리액트 프로젝트
 
