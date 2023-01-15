@@ -75,11 +75,27 @@ document.getElementById('root')!
 
 * https://stackoverflow.com/questions/63520680/argument-of-type-htmlelement-null-is-not-assignable-to-parameter-of-type-el
 
+* 그런데, 템플릿이 만들어준 것을 보았을 때는... 아래와 같았다. 타입을 명시해줘도 되는건지?
+
+  ```javascript
+  document.getElementById('root') as HTMLElement
+  ```
+
+  
 
 
 
 
 
+### TypeScript 적용된 템플릿으로 바로 프로젝트 생성
+
+```bash
+> npx create-react-app my-app-typescript --template=typescript
+```
+
+* `--template=typescript` 옵션을 붙여서 실행
+
+* 템플릿으로 만든 프로젝트를 보았을 때는 svg파일을 읽기위한 custom.d.ts 파일이 따로 없었음.
 
 
 
