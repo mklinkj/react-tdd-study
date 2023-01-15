@@ -83,10 +83,6 @@ document.getElementById('root')!
 
   
 
-
-
-
-
 ### TypeScript 적용된 템플릿으로 바로 프로젝트 생성
 
 ```bash
@@ -96,6 +92,27 @@ document.getElementById('root')!
 * `--template=typescript` 옵션을 붙여서 실행
 
 * 템플릿으로 만든 프로젝트를 보았을 때는 svg파일을 읽기위한 custom.d.ts 파일이 따로 없었음.
+
+
+
+### styled-components
+
+* 테스트 프로젝트 생성
+  ```bash
+  > npx create-react-app my-app-style --template=typescript
+  ```
+
+* styled-compoents 설치
+
+  ```
+  > cd my-app-style
+  > npm install --save styled-components
+  > npm install --save-dev @types/styled-components jest-styled-components
+  ```
+
+  
+
+
 
 
 
