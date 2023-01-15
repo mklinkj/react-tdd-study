@@ -9,9 +9,10 @@ describe('<App />', () => {
     const linkElement = screen.getByText(/learn react/i);
     expect(linkElement).toBeInTheDocument();
 
-    const imgElement = screen.getAllByRole('img')[0];
-    expect(imgElement).toHaveClass('App-logo');
-    expect(imgElement).toHaveAttribute('src', 'logo.svg');
+    const appLogo = screen.getByAltText('logo');
+    expect(appLogo).toBeInTheDocument();
+    expect(appLogo).toHaveAttribute('src', 'logo.svg');
+    expect(appLogo).toHaveAttribute('alt', 'logo');
 
     const pElement1 = screen.getByText(/Edit /i);
     expect(pElement1).toBeInTheDocument();

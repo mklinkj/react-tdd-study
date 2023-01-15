@@ -110,7 +110,22 @@ document.getElementById('root')!
   > npm install --save-dev @types/styled-components jest-styled-components
   ```
 
-  
+* 테스트 코드에서 App-logo 클래스 이름 값을 확인하므로 className으로 속성을 넣어줘야할 것 같다.
+
+  ```jsx
+  <AppLogo className='App-logo' src={logo} alt="logo"/>
+  ```
+
+* 다름 페이지를 넘겨보니.. (p93)
+
+  ```tsx
+    const appLogo = screen.getByAltText('logo');
+    expect(appLogo).toBeInTheDocument();
+    expect(appLogo).toHaveAttribute('src', 'logo.svg');
+    expect(appLogo).toHaveAttribute('alt', 'logo');
+  ```
+
+  alt텍스트를 찾아 진행할 수 있는데... 나는 getByAltText() 부분에서 혹시 Lint 경고 나오나 했는데... 나오지 않았다.
 
 
 

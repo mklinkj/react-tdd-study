@@ -1,7 +1,6 @@
 import React from 'react';
 import Styled, { keyframes } from 'styled-components';
 import logo from './logo.svg';
-import './App.css';
 
 const Container = Styled.div`
   text-align: center;  
@@ -48,7 +47,7 @@ function App() {
       {/* <header className="App-header"> */}
       <Header>
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <AppLogo src={logo} alt={logo}/>
+        <AppLogo className='App-logo' src={logo} alt="logo"/>
 
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
