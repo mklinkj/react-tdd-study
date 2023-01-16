@@ -95,7 +95,7 @@ document.getElementById('root')!
 
 
 
-### styled-components
+### styled-components 적용
 
 * 테스트 프로젝트 생성
   ```bash
@@ -126,6 +126,56 @@ document.getElementById('root')!
   ```
 
   alt텍스트를 찾아 진행할 수 있는데... 나는 getByAltText() 부분에서 혹시 Lint 경고 나오나 했는데... 나오지 않았다.
+
+
+
+### 절대 경로로 컴포넌트 추가
+
+* 예제 프로젝트 생성
+
+  ```bash
+  > npx create-react-app root-import --template=typescript
+  ```
+
+* Prettier
+
+  ```bash
+  > npm install --save-dev husky lint-staged prettier
+  ```
+
+  * husky: package.json에서 githook을 사용할 수 있게 해줌
+
+  * lint-staged: 깃의 stage된 파일들에 특정 동작을 수행할 수 있도록 해줌
+
+    ```json
+      "husky": {
+        "hooks": {
+          "pre-commit": "lint-staged"
+        }
+      },
+      "lint-staged": {
+        "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+          "prettier --write"
+        ]
+      },
+    ```
+
+    마크다운 *.md는 안해도 될 것 같긴한데...
+
+  * 98쪽에서 js 형식으로 prettierrc를 작성하셨는데... 그냥 `.prettierrc`로 아래 내용처럼쓰더라도 커맨드 라인이나 vscode의 플러그인에서 잘 인식 되었었는데... 일단은 아래처럼 했다.
+
+    ```json
+    {
+      "jsxBracketSameLine": true,
+      "singleQuote": true,
+      "trailingComma": "all",
+      "printWidth": 100
+    }
+    ```
+
+    
+
+    
 
 
 
