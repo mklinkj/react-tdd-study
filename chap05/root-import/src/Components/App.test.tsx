@@ -9,7 +9,7 @@ describe('<App />', () => {
     const linkElement = screen.getByText(/learn react/i);
     expect(linkElement).toBeInTheDocument();
 
-    const imgElement = screen.getAllByRole('img')[0];
+    const imgElement = screen.getAllByRole("img")[0];
     expect(imgElement).toHaveClass("App-logo");
     expect(imgElement).toHaveAttribute('src', 'logo.svg');
 
