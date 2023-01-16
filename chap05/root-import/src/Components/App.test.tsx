@@ -1,7 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-// import App from './App'; 상대경로도 되고 절대경로도 된다.
-import App from 'Component/App';
+import App from './App';
 
 describe('<App />', () => {
   it('renders component correctly', () => {
@@ -11,7 +10,7 @@ describe('<App />', () => {
     expect(linkElement).toBeInTheDocument();
 
     const imgElement = screen.getAllByRole('img')[0];
-    expect(imgElement).toHaveClass("App-logo");
+    expect(imgElement).toHaveClass('App-logo');
     expect(imgElement).toHaveAttribute('src', 'logo.svg');
 
     const pElement1 = screen.getByText(/Edit /i);
