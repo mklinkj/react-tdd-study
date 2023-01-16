@@ -186,5 +186,7 @@ document.getElementById('root')!
 
 ## 의견
 
-* 
+* 다른 것은 잘되는데, husky, lint-staged 설정은 일부러 넣진말자.. 잘안되는 것 같음
+  * 그냥 vscode의 저장시 자동 포맷팅과 .prettierrc 설정만 유지하자.
+
 
