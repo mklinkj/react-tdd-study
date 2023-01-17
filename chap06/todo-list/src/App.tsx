@@ -1,6 +1,6 @@
 import React from 'react';
 import Styled from 'styled-components';
-import { Button } from 'Components';
+import { Button, Input } from 'Components';
 
 const Container = Styled.div`
   min-height: 100vh;
@@ -19,11 +19,18 @@ const Contents = Styled.div`
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 `;
 
+const InputContainer = Styled.div`
+  display: flex;
+`;
+
 function App() {
   return (
     <Container>
       <Contents>
-        <Button label="추가" onClick={() => alert('추가')} />
+        <InputContainer>
+          <Input placeholder="할 일을 입력해 주세요" />
+          <Button label="추가" onClick={() => alert('추가')} />
+        </InputContainer>
       </Contents>
     </Container>
   );
