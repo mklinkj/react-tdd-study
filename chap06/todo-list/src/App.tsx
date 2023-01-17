@@ -28,7 +28,7 @@ function App() {
     <Container>
       <Contents>
         <InputContainer>
-          <Input placeholder="할 일을 입력해 주세요" />
+          <Input placeholder="할 일을 입력해 주세요" onChange={(text) => console.log(text)} />
           <Button label="추가" onClick={() => alert('추가')} />
         </InputContainer>
       </Contents>
