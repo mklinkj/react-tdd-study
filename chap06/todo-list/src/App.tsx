@@ -23,7 +23,7 @@ function App() {
   return (
     <Container>
       <Contents>
-        <Button label="테스트" />
+        <Button label="삭제" backgroundColor="#FF1744" hoverColor="#F01440" />
       </Contents>
     </Container>
   );
