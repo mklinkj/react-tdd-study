@@ -91,3 +91,10 @@
 ## 의견
 
 * styled-components 를 사용하게되면 tsx 파일에 코드의 문자열로 스타일을 지정하게되는데, 여기서 구문강조가 되면 좋은데.. 그게 안되는점이 좀 아쉬운것 같다. 오타날까봐 신경쓰게됨.
+
+
+
+## 정오표
+
+* p127 
+  * 중간쯤 ./src/Components/Button/index.`html` > ./src/Components/Button/index.`tsx`

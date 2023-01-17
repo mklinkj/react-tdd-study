@@ -23,7 +23,7 @@ function App() {
   return (
     <Container>
       <Contents>
-        <Button label="삭제" backgroundColor="#FF1744" hoverColor="#F01440" />
+        <Button label="추가" onClick={() => alert('추가')} />
       </Contents>
     </Container>
   );
