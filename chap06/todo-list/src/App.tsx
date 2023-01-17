@@ -1,6 +1,6 @@
 import React from 'react';
 import Styled from 'styled-components';
-import { Button, Input } from 'Components';
+import { Button, Input, ToDoItem } from 'Components';
 
 const Container = Styled.div`
   min-height: 100vh;
@@ -27,6 +27,7 @@ function App() {
   return (
     <Container>
       <Contents>
+        <ToDoItem />
         <InputContainer>
           <Input placeholder="할 일을 입력해 주세요" onChange={(text) => console.log(text)} />
           <Button label="추가" onClick={() => alert('추가')} />
