@@ -23,7 +23,7 @@ function App() {
   return (
     <Container>
       <Contents>
-        <Button />
+        <Button label="테스트" />
       </Contents>
     </Container>
   );

@@ -20,10 +20,14 @@ const Label = Styled.div`
   font-size: 16px;
 `;
 
-export const Button = () => {
+interface Props {
+  readonly label: string;
+}
+
+export const Button = ({ label }: Props) => {
   return (
     <Container>
-      <Label>추가</Label>
+      <Label>{label}</Label>
     </Container>
   );
 };
