@@ -16,16 +16,16 @@ const Label = Styled.div`
   margin-right: 20px;
 `;
 
-export const ToDoItem = () => {
+interface Props {
+  readonly label: string;
+  readonly onDelete?: () => void;
+}
+
+export const ToDoItem = ({ label, onDelete }: Props) => {
   return (
     <Container>
-      <Label>추가된 할일</Label>
-      <Button
-        label="삭제"
-        backgroundColor="#FF1744"
-        hoverColor="#F01440"
-        onClick={() => alert('삭제')}
-      />
+      <Label>{label}</Label>
+      <Button label="삭제" backgroundColor="#FF1744" hoverColor="#F01440" onClick={onDelete} />
     </Container>
   );
 };

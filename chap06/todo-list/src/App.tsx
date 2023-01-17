@@ -27,7 +27,7 @@ function App() {
   return (
     <Container>
       <Contents>
-        <ToDoItem />
+        <ToDoItem label="추가된 할일" onDelete={() => alert('삭제')} />
         <InputContainer>
           <Input placeholder="할 일을 입력해 주세요" onChange={(text) => console.log(text)} />
           <Button label="추가" onClick={() => alert('추가')} />
