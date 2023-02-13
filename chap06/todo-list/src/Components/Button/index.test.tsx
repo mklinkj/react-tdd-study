@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import 'jest-styled-components';
 
 import { Button } from './index';
@@ -30,5 +30,16 @@ describe('<Button />', () => {
     expect(parent).toHaveStyleRule('background-color', hoverColor, {
       modifier: ':hover',
     });
+  });
+
+  it('click the button', () => {
+    const handleClick = jest.fn(); // Jest의 Mock함수
+    render(<Button label="Button Test" onClick={handleClick} />);
+
+    const label = screen.getByText('Button Test');
+    expect(handleClick).toHaveBeenCalledTimes(0);
+
+    fireEvent.click(label);
+    expect(handleClick).toHaveBeenCalledTimes(1);
   });
 });
