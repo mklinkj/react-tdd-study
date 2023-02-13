@@ -4,7 +4,7 @@ import 'jest-styled-components';
 
 import { Input } from './index';
 
-describe('<Button />', () => {
+describe('<Input />', () => {
   it('renders component correctly', () => {
     const { container } = render(<Input value="default value" />);
 
