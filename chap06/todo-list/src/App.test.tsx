@@ -49,4 +49,17 @@ describe('<App />', () => {
     expect(todoItem).not.toBeInTheDocument();
     expect(toDoList.childElementCount).toBe(1);
   });
+
+  // 아무 동작없이 추가버튼 눌렀을 때...
+  it('does not add empty ToDo', () => {
+    render(<App />);
+
+    const toDoList = screen.getByTestId('toDoList');
+    const length = toDoList.childElementCount;
+
+    const button = screen.getByText('추가');
+    fireEvent.click(button);
+
+    expect(toDoList.childElementCount).toBe(length);
+  });
 });
