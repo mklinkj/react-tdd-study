@@ -18,4 +18,16 @@ describe('<ToDoItem />', () => {
 
     expect(container).toMatchSnapshot();
   });
+
+  it('clicks the delete button', () => {
+    const handleClick = jest.fn();
+
+    render(<ToDoItem label="default vaule" onDelete={handleClick} />);
+
+    const deleteButton = screen.getByText('삭제');
+
+    expect(handleClick).toHaveBeenCalledTimes(0);
+    fireEvent.click(deleteButton);
+    expect(handleClick).toHaveBeenCalledTimes(1);
+  });
 });
