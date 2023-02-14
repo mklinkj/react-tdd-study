@@ -24,7 +24,7 @@
 
 ### 6. [Props와 State](chap06)
 
-### 7. 클래스 컴포넌트
+### 7. [클래스 컴포넌트](chap07)
 
 ### 8. Context API와 localStorage
 
