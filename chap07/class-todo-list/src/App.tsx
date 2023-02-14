@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Styled from 'styled-components';
 import { Button, Input, ToDoItem } from 'Components';
+import type { IScriptSnapshot } from 'typescript';
 
 const Container = Styled.div`
   min-height: 100vh;
@@ -91,6 +92,46 @@ class App extends Component<Props, State> {
       </Container>
     );
   }
+
+  ////// 라이프 사이클 함수 //////
+  //   // getDerivedStateFromProps
+  //   static getDerivedStateFromProps(nextProps: Props, prevState: State) {
+  //     console.log('getDerivedStateFromProps');
+  //     return null;
+  //   }
+
+  //   // componentDidMount
+  //   componentDidMount() {
+  //     console.log('componentDidMount');
+  //   }
+
+  //   // getSnapshotBeforeUpdate
+  //   getSnapshotBeforeUpdate(prevProps: Readonly<Props>, prevState: Readonly<State>) {
+  //     console.log('getSnapshotBeforeUpdate');
+
+  //     return {
+  //       testData: true,
+  //     };
+  //   }
+
+  //   // componentDidUpdate
+  //   componentDidUpdate(prevProps: Readonly<Props>, prevState: Readonly<State>, snapshot?: any) {
+  //     console.log('componentDidUpdate');
+  //   }
+
+  //   // shouldComponentUpdate
+  //   shouldComponentUpdate(nextProps: Readonly<Props>, nextState: Readonly<State>, nextContext: any) {
+  //     console.log('shouldComponentUpdate');
+  //     return true;
+  //   }
+
+  //   componentWillUnmount() {
+  //     console.log('componentWillUnmount');
+  //   }
+
+  //   componentDidCatch(error: Error, errorInfo: React.ErrorInfo) {
+  //     // this.setState({ error: true });
+  //   }
 }
 
 export default App;
