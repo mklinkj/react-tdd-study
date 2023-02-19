@@ -1,34 +1,34 @@
 import React, { Component } from 'react';
-import Styled from 'styled-components';
+import styled from 'styled-components';
 import { Button, Input, ToDoItem } from 'Components';
 import type { IScriptSnapshot } from 'typescript';
 
-const Container = Styled.div`
+const Container = styled.div`
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;  
+  flex-direction: column;
 `;
 
-const Contents = Styled.div`
+const Contents = styled.div`
   display: flex;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   flex-direction: column;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 `;
 
-const InputContainer = Styled.div`
+const InputContainer = styled.div`
   display: flex;
 `;
 
-const ToDoListContainer = Styled.div`
+const ToDoListContainer = styled.div`
   min-width: 350px;
   height: 400px;
   overflow-y: scroll;
-  border: 1px solid #BDBDBD;
+  border: 1px solid #bdbdbd;
   margin-bottom: 20px;
 `;
 
