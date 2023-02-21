@@ -26,7 +26,7 @@
 
 ### 7. [클래스 컴포넌트](chap07)
 
-### 8. Context API와 localStorage
+### 8. [Context API와 localStorage](chap08)
 
 ### 9. react-router
 

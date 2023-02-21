@@ -20,7 +20,7 @@
 > cd class-todo-list
 >
 > npm install --save styled-components
-> npm install --save-dev @types/sytled-components jest-styped-components
+> npm install --save-dev @types/styled-components jest-styled-components
 > npm install --save-dev husky lint-staged prettier
 >
 ```
